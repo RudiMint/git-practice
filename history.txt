@@ -1,43 +1,17 @@
-    1  cd
-    2  pwd
-    3  ssh-keygen
-    4  cat .ssh/id_ed25519.pub
-    5  clip < ~/.ssh/id_ed25519.pub
-    6  ssh -i ~/.ssh/id_ed25519 ec2-user@linux.itcareerhub.de
-    7  export SHEVCHENKO_VARIABLE="121225-ptm"
-    8  echo $SHEVCHENKO_VARIABLE
-    9  mkdir -p /opt/121225_ptm/shevchenko
-   10  sudo mkdir -p /opt/121225_ptm/shevchenko
-   11  sudo mkdir -p ~/opt/121225_ptm/shevchenko
-   12  mkdir -p ~/opt/121225_ptm/shevchenko
-   13  cd /opt/121225_ptm/shevchenko
-   14  cd /c/Users/ICH/opt/121225_ptm/shevchenko
-   15  touch .process_management
-   16  date >> .process_management
-   17  export ICH_VARIABLE="Welcome to Amazon server"
-   18  echo "ICH_VARIABLE" >> .process_management
-   19  free -h | grep Mem >> .process
-   20  free -h | grep Mem >> .process_management
-   21  systeminfo | grep "total physical memory" >> .process_management
-   22  ps -U root --no-headers | wc -l >> .process_management
-   23  ps -W | grep SYSTEM | wc -l >> .process_management
-   24  printenv | grep SHEVCHENKO_VARIABLE >> .process_management
-   25  ps -W | grep ssh | grep -i server | awk '{print "PID "$1" PPID "$2}' >> .process_management
-   26  cat .process_management
-   27  git clone https://github.com/RudiMint/git-practice.git
-   28  cd git-practice
-   29  git checkout -b feature
-   30  touch README.md
-   31  echo "# my practice repository for homework 12" > README.md
-   32  ls
-   33  git checkout feature
-   34  ls -a
-   35  git add README.md
-   36  git commit -m "add README file"
-   37  git push origin feature
-   38  git commit --amend -m "add README file and update ammend"
-   39  git push --force origin feature
-   40  git checkout main
-   41  git pull origin main
-   42  git merge feature
-   43  history > history.txt
+   1  git clone https://github.com/RudiMint/git-practice.git
+   2  cd git-practice
+   3  git checkout -b feature
+   4  touch README.md
+   5  echo "# my practice repository for homework 12" > README.md
+   6  ls
+   7  git checkout feature
+   8  ls -a
+   9  git add README.md
+   10  git commit -m "add README file"
+   11  git push origin feature
+   12  git commit --amend -m "add README file and update ammend"
+   13  git push --force origin feature
+   14  git checkout main
+   15  git pull origin main
+   16  git merge feature
+   17  history > history.txt
